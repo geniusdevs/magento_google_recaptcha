@@ -1,0 +1,28 @@
+<layout>
+    <adminhtml_index_login>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="adminhtml/template" name="content" template="geniusdev/recaptcha/login.phtml">
+                <block type="core/text_list" name="form.additional.info" >
+                    <block type="captcha/captcha" name="captcha">
+                        <action method="setFormId"><formId>backend_login</formId></action>
+                        <action method="setImgWidth"><width>226</width></action>
+                        <action method="setImgHeight"><width>50</width></action>
+                    </block>
+                </block>
+            </block>
+        </block>
+    </adminhtml_index_login>
+    <adminhtml_index_forgotpassword>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="adminhtml/template" name="content" template="geniusdev/recaptcha/forgotpassword.phtml">
+                <block type="core/text_list" name="form.additional.info" >
+                    <block type="captcha/captcha" name="captcha">
+                        <action method="setFormId"><formId>backend_login</formId></action>
+                        <action method="setImgWidth"><width>226</width></action>
+                        <action method="setImgHeight"><width>50</width></action>
+                    </block>
+                </block>
+            </block>
+        </block>
+    </adminhtml_index_forgotpassword>
+</layout>

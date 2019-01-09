@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <geniusdev_recaptcha translate="title" module="geniusdev_recaptcha">
+                                        <title>GeniusDev Re-Captcha</title>
+                                        <sort_order>0</sort_order>
+                                    </geniusdev_recaptcha>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
